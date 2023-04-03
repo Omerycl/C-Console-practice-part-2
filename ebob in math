@@ -1,0 +1,38 @@
+   // EBOB bulmaa en büyük ortak böleni bulma..
+		
+		
+		 int sayi1, sayi2;
+		Console.WriteLine("lütfen 1. sayı giriniz.");
+		
+		sayi1 = int.Parse(Console.ReadLine());
+ 
+ 	Console.WriteLine("lütfen 2.. sayı giriniz.");
+		
+		sayi2 = int.Parse(Console.ReadLine());
+		int orjiSayi1=sayi1;
+		int orjiSayi2 = sayi2;
+ 
+ 
+ while (sayi1 !=sayi2)
+ {
+     if (sayi1>sayi2)
+     {
+         sayi1 -=sayi2;
+     }
+     else
+     {
+         sayi2 -=sayi1;
+         
+     }
+     
+ }
+ Console.WriteLine("EBOB ({0},{1} ={2})",orjiSayi1, orjiSayi2,sayi1);
+ 
+ 
+ 
+ 
+		
+		
+    
+    
+    
