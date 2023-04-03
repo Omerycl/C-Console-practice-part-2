@@ -1,0 +1,60 @@
+//restoran menü programı
+    // 1 adana 12.75tltl
+    // 2 beyti 22.750tl
+    // 3 salata 7.00tl
+    // 4 çorba 8.00tl
+    // 5 içecek 4.25tl
+    // 6 menüden çıkış
+    
+    int secim;
+    double toplam =0;
+    do
+    {
+        Console.WriteLine("1 adana 12.75tl");
+        Console.WriteLine("2 beyti 22.50tl");
+         Console.WriteLine("3 salata 7.00tl");
+          Console.WriteLine("4 çorba 8.00tl");
+           Console.WriteLine("5 içecek 4.25tl");
+            Console.WriteLine("6 menüden çıkış");
+            Console.WriteLine("lütfen seçim yapınız.");
+            secim = int.Parse(Console.ReadLine());
+            
+            switch (secim)
+            {
+                case 1:
+                toplam += 12.75;
+                break;
+                
+                case 2:
+                toplam += 22.5;
+                break;
+                
+                case 3:
+                toplam += 7.00;
+                break;
+                
+                case 4:
+                toplam += 8.00;
+                break;
+                
+                case 5:
+                toplam += 4.25;
+                break;
+                
+				case 6:
+                Console.WriteLine("alışveriş tamamlandı");
+                break;
+				default:
+					
+                
+                Console.WriteLine("LÜTFEN 1-6 arasında seçim yapınız");
+                break;
+                
+                
+            }
+    
+        } while(secim != 6);
+            {
+             Console.WriteLine("TOPLAM hesap =" +toplam);
+                
+            }
