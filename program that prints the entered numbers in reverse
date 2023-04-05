@@ -1,0 +1,26 @@
+// numbers -->152 251
+     while (true)
+     {
+         
+     
+    int sayi;
+    int sayininTersi = 0;
+     Console.WriteLine("lütfen bir sayı giriniz.");
+        sayi =Convert.ToInt32(Console.ReadLine());
+        int orjSayi = sayi;
+    do
+    {
+       
+        sayininTersi = sayininTersi*10; //0
+        sayininTersi =sayininTersi+sayi%10;  //2 
+        sayi = sayi/10; //sayi 15
+        
+    }
+    while(sayi != 0);
+    
+    Console.WriteLine(orjSayi+"sayısının tersten yazılmış hali=" + sayininTersi);
+    
+  }
+  
+  
+  
